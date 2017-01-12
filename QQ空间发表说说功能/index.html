@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: url('./images/bg.jpg');
+		}
+		#message{
+			width: 600px;
+			height: 180px;
+			background: #fff;
+			margin:100px auto 0;
+			padding: 5px 10px;
+		}
+		#message .title{
+			color:#666;
+			font-size: 14px;
+			line-height:25px;
+		}
+		#message .txt{
+			height:70px;
+			border:1px solid #ddd;
+			font-size: 12px;
+			line-height: 25px;
+			margin-top:10px;
+		}
+		#message .btn{
+			margin-top: 20px;
+			position: relative;
+		}
+		#message .btn img.pic-btn{
+			float: left;
+			cursor: pointer;
+		}
+		#message .btn .fb-btn{
+			float: right;
+			background: #ff9933;
+			padding: 5px 15px;
+			font-size: 12px;
+			color: #fff;
+			border-radius:5px;
+			cursor: pointer;
+		}
+		#message .btn .page-list{
+			width:400px;
+			height:200px;
+			background: #fff;
+			border:1px solid #ddd;
+			position: absolute;
+			left:22px;
+			top:22px;
+			display: none;
+		}
+		#message .btn .page-list ul li{
+			list-style:none;
+			float:left;
+			margin:3px;
+			cursor: pointer;
+		}
+		#content{
+			width: 620px;
+			margin:20px auto;
+		}
+		#content .con{
+			width: 600px;
+			padding:0 10px;
+			background:#fff;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+		#content .con .title{
+			height: 50px;
+			padding: 5px 10px;
+			border-bottom: 1px dotted #666;
+		}
+		#content .con .title img{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin-right: 5px;
+		}
+		#content .con .txt{
+			font-size: 12px;
+			line-height:25px;
+		}
+
+	</style>
+</head>
+<body>
+<div id="message">
+	<p class="title">有什么新鲜事想告诉大家?</p>
+	<div class="txt" contenteditable="true"></div>
+	<div class="btn">
+		<img class='pic-btn' src="images/88_thumb.gif" width="22" height="22" alt="表情"/>
+		<!-- 图片四要素：1.设置宽高，减少读写的时间，提高效率
+			2.alt 有利于seo -->
+		<p class="fb-btn">发表</p>
+		<div class="page-list">
+			<ul>
+				<li><img src="images/zz2_thumb.gif" title="[织]"></li>
+				<li><img src="images/horse2_thumb.gif" title="神马"></li>
+				<li><img src="images/hsa_thumb.gif"></li>
+				<li><img src="images/laugh.gif"></li>
+				<li><img src="images/lazu_thumb.gif"></li>
+				<li><img src="images/liwu_thumb.gif"></li>
+				<li><img src="images/sad_thumb.gif"></li>
+				<li><img src="images/sk_thumb.gif"></li>
+				<li><img src="images/smilea_thumb.gif"></li>
+				<li><img src="images/yw_thumb.gif"></li>
+				<li><img src="images/yx_thumb.gif"></li>
+				<li><img src="images/ye_thumb.gif"></li>
+				<li><img src="images/t_thumb.gif"></li>
+				<li><img src="images/tootha_thumb.gif"></li>
+				<li><img src="images/wg_thumb.gif"></li>
+				<li><img src="images/yhh_thumb.gif"></li>
+				<li><img src="images/zhh_thumb.gif"></li>
+				<li><img src="images/sw_thumb.gif"></li>
+				<li><img src="images/sleepya_thumb.gif"></li>
+				<li><img src="images/h_thumb.gif"></li>
+				<li><img src="images/hatea_thumb.gif"></li>
+				<li><img src="images/good_thumb.gif"></li>
+				<li><img src="images/sk_thumb.gif"></li>
+				<li><img src="images/panda_thumb.gif"></li>
+				<li><img src="images/money_thumb.gif"></li>
+				<li><img src="images/hatea_thumb.gif"></li>
+				<li><img src="images/good_thumb.gif"></li>
+				<li><img src="images/nm_thumb.gif"></li>
+				<li><img src="images/ok_thumb.gif"></li>
+				<li><img src="images/otm_thumb.gif"></li>
+				<li><img src="images/lovea_thumb.gif"></li>
+				<li><img src="images/no_thumb.gif"></li>
+				<li><img src="images/mb_thumb.gif"></li>
+				<li><img src="images/bba_thumb.gif"></li>
+				<li><img src="images/bs2_thumb.gif"></li>
+				<li><img src="images/bs_thumb.gif"></li>
+				<li><img src="images/camera_thumb.gif"></li>
+				<li><img src="images/cry.gif"></li>
+				<li><img src="images/cake.gif"></li>
+				<li><img src="images/cf_thumb.gif"></li>
+				<li><img src="images/cj_thumb.gif"></li>
+				<li><img src="images/come_thumb.gif"></li>
+				<li><img src="images/cool_thumb.gif"></li>
+				<li><img src="images/crazya_thumb.gif"></li>
+				
+				<li><img src="images/hufen_thumb.gif"></li>
+				<li><img src="images/j_thumb.gif"></li>
+				<li><img src="images/liwu_thumb.gif"></li>
+				<li><img src="images/sad_thumb.gif"></li>
+				<li><img src="images/sk_thumb.gif"></li>
+				<li><img src="images/smilea_thumb.gif"></li>
+				<li><img src="images/yw_thumb.gif"></li>
+				<li><img src="images/yx_thumb.gif"></li>
+				<li><img src="images/ye_thumb.gif"></li>
+				<li><img src="images/t_thumb.gif"></li>
+				<li><img src="images/tootha_thumb.gif"></li>
+				<li><img src="images/wg_thumb.gif"></li>
+				<li><img src="images/yhh_thumb.gif"></li>
+				<li><img src="images/zhh_thumb.gif"></li>
+				<li><img src="images/sw_thumb.gif"></li>
+				<li><img src="images/sleepya_thumb.gif"></li>
+				<li><img src="images/sk_thumb.gif"></li>
+				<li><img src="images/panda_thumb.gif"></li>
+				<li><img src="images/money_thumb.gif"></li>
+				<li><img src="images/nm_thumb.gif"></li>
+				<li><img src="images/ok_thumb.gif"></li>
+				<li><img src="images/otm_thumb.gif"></li>
+				<li><img src="images/lovea_thumb.gif"></li>
+				<li><img src="images/no_thumb.gif"></li>
+				<li><img src="images/mb_thumb.gif"></li>
+				<li><img src="images/bba_thumb.gif"></li>
+				<li><img src="images/bs2_thumb.gif"></li>
+				<li><img src="images/bs_thumb.gif"></li>
+				<li><img src="images/camera_thumb.gif"></li>
+				<li><img src="images/cry.gif"></li>
+				<li><img src="images/cake.gif"></li>
+				<li><img src="images/cf_thumb.gif"></li>
+				<li><img src="images/cj_thumb.gif"></li>
+				<li><img src="images/hufen_thumb.gif"></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="content">
+	<!-- <div class="con">
+		<div class="title"><img src="images/QQ.png" width="534" height="532" alt="头像" align="absmiddle">Tang</div>
+		<div class="txt">
+			mmmmmmmmmmmmmmmmmm
+		</div>
+	</div> -->
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+	var messageTxt=$('#message .txt');
+	var messagelist=$('#message .btn .page-list ul li');
+	var messagebtn=$('.fb-btn');
+	var picBtn=$('.pic-btn');
+	messagebtn.click(function(){
+		var Txt=messageTxt.html();
+		if(Txt == ''){
+			messageTxt.focus();
+		}else{
+			$('#content').append('<div class="con"><div class="title"><img src="images/QQ.jpg" width="534" height="532" alt="头像" align="absmiddle">Tang</div><div class="txt">'+Txt+'</div></div>');
+			messageTxt.html('');
+		}	
+	})
+	picBtn.click(function(e){
+		$('.page-list').slideDown();
+		e.stopPropagation();//阻止冒泡
+	})
+	$(document).click(function(){
+		$('.page-list').slideUp();
+	})
+	messagelist.click(function(){
+		var img=$(this).find('img').clone();
+		messageTxt.append(img);
+	})
+</script>
+</body>
+</html>
